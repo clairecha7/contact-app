@@ -68,3 +68,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<!-- This code is for handling the submission of a form, where the user enters some information and submits it to be saved in a list of contacts. Here's what the code does:
+
+It prevents the default form submission behavior from occurring.
+
+It checks if there's an "id" value in the "info" object. If there is, it means the user is updating an existing contact, so it creates a new array called "newData" by mapping over the existing "data" array and replacing the old contact with the updated contact information (which is stored in the "info" object).
+
+If there's no "id" value in the "info" object, it means the user is adding a new contact. In this case, it generates a new "id" value using the Math.random() function and adds the new contact to the "data" array.
+
+After either updating an existing contact or adding a new one, the code resets the "info" object to its initial state using the "initialValues" object. -->
